@@ -1,0 +1,98 @@
+/* Login Section Styles */
+.login-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Change text color to white for better contrast */
+    text-align: center;
+    background-image: url('cubackgroundimage.jpeg');
+    background-repeat: no-repeat;
+    position: relative; /* Make the section a positioned container */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent for a soft overlay effect */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width for larger screens */
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem; /* Increased size for better visibility */
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6347; /* Tomato color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.btn-login:hover {
+    background-color: #ff4500; /* Darker tomato */
+}
+
+/* Dialog Box Styles */
+.dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.error-msg {
+    margin-top: 10px;
+    color: red;
+    font-size: 0.9rem;
+    display: none; /* Hidden by default */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 1.5rem; /* Less padding on smaller screens */
+    }
+    .login-container h2 {
+        font-size: 1.5rem; /* Smaller title size on mobile */
+    }
+    .btn-login {
+        font-size: 0.9rem; /* Smaller button font */
+    }
+}

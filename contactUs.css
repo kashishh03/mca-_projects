@@ -1,0 +1,121 @@
+/* Contact Us Section Styles */
+.contact-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('cubackgroundimage.jpeg'); /* Same background as the login page */
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px;
+}
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.95); /* Soft transparent white background */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px; /* Larger max-width for a more spacious form */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-container h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border-color: #d22026;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #d22026;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #d22026;
+    transform: translateY(-2px);
+}
+
+.success-msg {
+    margin-top: 20px;
+    color: green;
+    font-size: 0.9rem;
+    display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 1.5rem;
+    }
+    .contact-container h2 {
+        font-size: 1.8rem;
+    }
+    .contact-container p {
+        font-size: 1rem;
+    }
+    .btn-submit {
+        font-size: 1rem;
+    }
+}
